@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RegisterActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_register" />
+
+    <TextView
+        android:id="@+id/R_txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="@string/signup"
+        android:alpha="0"
+        android:textColor="@color/ColorRed_2"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ed_register_name"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:elevation="5dp"
+        android:alpha="0"
+        android:paddingStart="13dp"
+        android:drawableStart="@drawable/person"
+        android:drawablePadding="10dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/username"
+        android:background="@drawable/edittext_column"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/R_txt_1"
+        android:autofillHints="" />
+
+    <com.example.submissionstory.ui.custom.CustomEmailEditText
+        android:id="@+id/ed_register_email"
+        android:layout_width="300dp"
+        android:alpha="0"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_column"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/ed_register_name"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/ed_register_name"
+        app:layout_constraintTop_toBottomOf="@+id/ed_register_name" />
+
+    <com.example.submissionstory.ui.custom.CustomPasswordEditText
+        android:id="@+id/ed_register_password"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0"
+        android:ems="10"
+        android:elevation="5dp"
+        android:paddingStart="13dp"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:background="@drawable/edittext_column"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        app:layout_constraintEnd_toEndOf="@+id/ed_register_email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ed_register_email"
+        app:layout_constraintTop_toBottomOf="@+id/ed_register_email" />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:alpha="0"
+        android:text="@string/signup"
+        android:background="@drawable/button_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ed_register_password"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/ed_register_password"
+        app:layout_constraintTop_toBottomOf="@+id/ed_register_password"
+        app:layout_constraintVertical_bias="0.101" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

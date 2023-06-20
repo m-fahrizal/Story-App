@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Submission Story</string>
+    <string name="username">Username</string>
+    <string name="camera">Camera</string>
+    <string name="upload">Upload</string>
+    <string name="gallery">Gallery</string>
+    <string name="image">Image</string>
+    <string name="description">Description</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="signin">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="sign_up">Sign Up?</string>
+    <string name="logout">Log Out</string>
+    <string name="addStory">Add Story</string>
+    <string name="detail">Detail Story</string>
+    <string name="description_cannot_be_empty">Description must be fill</string>
+    <string name="login_success">Login Succes!</string>
+    <string name="title_activity_map_story">MapStoryActivity</string>
+</resources>
